@@ -8,11 +8,11 @@ Impactful Features
 <img src = "https://github.com/jaytrey777/Project-1-Revisited/blob/main/Images/Lin_Reg_3_Largest_Coefficients.png">
 </p>
 <p>
-If the observation belongs to Outlet_Type, then the target sales will increase by 896.195 rupees. The type of store you have can increase your sales.
+If the observation belongs to `Outlet_Type`, then the target sales will increase by 896.195 rupees. There are 4 types of stores that were analyzed: Grocery Store, Supermarket Type 1, Supermarket Type 2, Supermarket Type 3. The type of store you have and its size has a direct impact on the sales.
 
-If the observation belongs to Item Visibility, then the target sales will decrease by 423.390 rupees. If items are not visible, it will hinder sales.
+If the observation belongs to `Item Visibility`, then the target sales will decrease by 423.390 rupees. Certain items are easily visible in multiple locations in the store while others are very hard to find. If items are not visible, they will be hard to find and this will hinder sales.
 
-If the observation belongs to Outlet_Identifier_OUT019, then the target sales will decrease by 467.652 rupees. This store can hinder sales.
+If the observation belongs to `Outlet_Identifier_OUT019`, then the target sales will decrease by 467.652 rupees. This store is of a specific type and has several factors that hinder sales.
 </p>
 
 
@@ -24,9 +24,13 @@ Feature Importance
 <img src = "https://github.com/jaytrey777/Project-1-Revisited/blob/main/Images/Dec_Tree_5_Most_Important_Features.png">
 </p>
 <p>
-The most important feature for the Decision Tree Model is Item_MRP, with a feature importance of about 0.45. This means that the model relied on this feature to make its decisions to split nodes about 45% of the time.
+The most important feature for the Decision Tree Model is `Item_MRP`, with a feature importance of about 0.45. This means that the model relied on this feature to make its decisions to split nodes about 45% of the time. This makes sense because the higher the retail price, the more sales it will have if it is a high sales item.  
 
-The other top features were Outlet_Type, Item_Visibility, Item_Weight, and Outlet_Establishment_Year_1985. The model made decisions based on these features 25%, 10%, 5% and 1% respectively. These features account for the majority of the decisions made by the model at any given time. Outlet_Type and Item_Visibility were also important in the Linear Regression model.
+The other top features were `Outlet_Type`, `Item_Visibility`, `Item_Weight`, and `Outlet_Establishment_Year_1985`. The model made decisions based on these features 25%, 10%, 5% and 1% respectively. These features account for the majority of the decisions made by the model at any given time. `Outlet_Type` and `Item_Visibility` were also important in the Linear Regression model.
+
+If the observation belongs to `Outlet_Type`, there are 4 types of stores that were analyzed: Grocery Store, Supermarket Type 1, Supermarket Type 2, Supermarket Type 3. The type of store you have and its size has a direct impact on the sales.
+
+If the observation belongs to Item `Visibility`, certain items are easily visible in multiple locations in the store while others are very hard to find. If items are not visible, they will be hard to find and this will hinder sales.
 </p>
 
 
