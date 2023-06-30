@@ -58,3 +58,98 @@ Outlet_Type - The type of store determines has an direct impact on the profit. T
 </p>
 <p>
 Item_Visibility - Based on the plot, the visibility of an item has little impact on the profit of the item. There are items that have high profits, but low visibility and vice versa.
+</p>
+
+
+<p align = "center"> 
+Lime Tabular Explanation(Minimum Sales)
+</p>
+
+<p align = "center"> 
+<img src = "https://github.com/jaytrey777/Project-1-Revisited/blob/main/Images/LIME_Min_Sales.png">
+</p>
+
+As we can see above, this was the minimum sales value from the target. There were several features that led to this minimum value:
+
+* Item_MRP = 32.89
+* Outlet_Type = 0
+* Outlet_Establishment_Year_1985 = 0
+* Item_Type_Meat = 0
+* Item_Type_Canned = 0
+* Outlet_Identifier_OUT049 = 0
+* Outlet_Identifier_OUT027 = 0
+* Item_Type_Breakfast = 0
+
+The most impactful features that are working to help increase the minimum sales are:
+
+* Item_Type_Others = 0
+* Item_Type_Breads = 0
+</p>
+
+
+<p align = "center"> 
+Force Plot(Minimum Sales)
+</p>
+
+<p align = "center"> 
+<img src = "https://github.com/jaytrey777/Project-1-Revisited/blob/main/Images/Force_Plot_Min_Sales.png">
+</p>
+
+In the visual above, we can see:
+
+* A number line at the top of the visual (with the base value labeled).
+  * Here the base value is 2,210.
+* A bold value at the intersection of the red and blue is the final SHAP value for the observation.
+  * Here the SHAP value is 75.90
+* The red and blue segments with arrows towards the middle are "pushing" against each other.
+  * Visually, the contributions of the blue features are greater than the red which means a greater "push" towards lower revenue.
+  * The wider the segment is for the feature, the greater its contribution to the prediction is.
+* As you can see, Item_MRP is the most important feature for this output. Further, the actual value for each feature is listed. For the sales, this Item_MRP = 32.89 Rupees.
+</p>
+
+
+<p align = "center"> 
+Lime Tabular Explanation(Maximum Sales)
+</p>
+
+<p align = "center"> 
+<img src = "https://github.com/jaytrey777/Project-1-Revisited/blob/main/Images/LIME_Max_Sales.png">
+</p>
+
+As we can see above, this was the maximum sales value from the target.
+
+There were several features that led to this maximum value:
+- Item_MRP = 235
+- Outlet_Type = 3
+- Outlet_Establishment_Year_1985 = 1
+- Item_Type_Seafood = 1
+- Item_Type_Household = 1
+- Outlet_Identifier_OUT027 = 1.00
+
+The most impactful features that are working against the maximum sales are:
+- Item_Type_Others = 0
+- Item_Type_Breakfast = 0
+- Item_Type_Hard Drinks = 0
+- Item_Type_Health and Hygiene = 0
+</p>
+
+
+<p align = "center"> 
+Force Plot(Maximum Sales)
+</p>
+
+<p align = "center"> 
+<img src = "https://github.com/jaytrey777/Project-1-Revisited/blob/main/Images/Force_Plot_Max_Sales.png">
+</p>
+
+In the visual above, we can see:
+
+- A number line at the top of the visual (with the base value labeled).
+  - Here the base value is 2,210.
+- A bold value at the intersection of the red and blue is the final SHAP value for the observation.
+  - Here the SHAP value is 2,554.01
+- The red and blue segments with arrows towards the middle are "pushing" against each other.
+  - Visually, the contributions of the red features are greater than the blue which means a greater "push" towards higher revenue.
+  - The wider the segment is for the feature, the greater its contribution to the prediction is.
+- As you can see, `Item_MRP` is the most important feature for this output. Further, the actual value for each feature is listed. For the sales, this `Item_MRP` = 235 Rupees.
+</p>
