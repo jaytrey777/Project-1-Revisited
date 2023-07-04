@@ -73,21 +73,32 @@ Lime Tabular Explanation(Minimum Sales)
 <img src = "https://github.com/jaytrey777/Project-1-Revisited/blob/main/Images/LIME_Min_Sales.png">
 </p>
 
-As we can see above, this was the minimum sales value from the target. There were several features that led to this minimum value:
+As we can see above, this was the maximum sales value from the target.
 
-* Item_MRP = 32.89
-* Outlet_Type = 0
-* Outlet_Establishment_Year_1985 = 0
-* Item_Type_Meat = 0
-* Item_Type_Canned = 0
-* Outlet_Identifier_OUT049 = 0
-* Outlet_Identifier_OUT027 = 0
-* Item_Type_Breakfast = 0
+There were several features that led to this minimum value:
+- Item_MRP = 32.89
+  - This item has the largest negative value and affects the predicted value the most. It decreased the sales by 632.56 rupees.
+- Outlet_Type = 0
+  - The outlet type also played a big factor in the sales. This type of store decreased the sales by 944.46
+- Outlet_Establishment_Year_1985 = 1
+  - Although the year a store cannot be too much of a factor because all the stores can't be created the same year, this year was a good year for the store. Possibly because the store filled a need in the area it was placed in. 
+- Item_Type_Seafood = 0
+  - Seafood must not be popular in the area of these stores so it has an impact on the outcome of the model.
+- Item_Type_Soft Drinks = 0
+  - Soft Drinks must not be popular in the area of these stores so it has an impact on the outcome of the model. 
+- Outlet_Identifier_OUT027 = 0
+  - Store 027 is one of the lower selling stores, so the fact that is is not apart of the lower selling group is helping the overall outcome of the model. 
+- Item_Type_Others = 0
+  - Other items must not be popular in the area of these stores so it has an impact on the outcome of the model.
 
-The most impactful features that are working to help increase the minimum sales are:
+The most impactful features that are working against the maximum sales are:
 
-* Item_Type_Others = 0
-* Item_Type_Breads = 0
+- Item_Type_Breakfast = 0
+  - Breakfast must not be popular in the area of these stores so it has an impact on the outcome of the model.
+- Outlet_Identifier_OUT019 = 0
+  - Store 019 is one of the lower selling stores, so the fact that is is not apart of the lower selling group is helping the overall outcome of the model.
+- Item_Type_Snack Food = 0
+  - Snack Foods must not be popular in the area of these stores so it has an impact on the outcome of the model.
 </p>
 
 
