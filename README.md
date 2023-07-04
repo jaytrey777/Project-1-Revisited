@@ -125,27 +125,27 @@ As we can see above, this was the maximum sales value from the target.
 
 There were several features that led to this maximum value:
 - Item_MRP = 235
- - This item has the largest positive value and affects the predicted value the most. It increased the sales by 1542.98 rupees.
+  - This item has the largest positive value and affects the predicted value the most. It increased the sales by 1542.98 rupees.
 - Outlet_Type = 3
- - The outlet type played a big factor in the sales. This type of store increased the sales by 837.67
+  - The outlet type played a big factor in the sales. This type of store increased the sales by 837.67
 - Item_Type_Bread = 0
- - Bread must not be popular in the area of these stores so it has an impact on the outcome of the model.
+  - Bread must not be popular in the area of these stores so it has an impact on the outcome of the model.
 - Outlet_Establishment_Year_1985 = 1
- - Although the year a store cannot be too much of a factor because all the stores can't be created the same year, this year was a good year for the store. Possibly because the store filled a need in the area it was placed in. 
+  - Although the year a store cannot be too much of a factor because all the stores can't be created the same year, this year was a good year for the store. Possibly because the store filled a need in the area it was placed in. 
 - Item_Type_Meat = 0
- - Meat must not be popular in the area of these stores so it has an impact on the outcome of the model.
+  - Meat must not be popular in the area of these stores so it has an impact on the outcome of the model.
 
 The most impactful features that are working against the maximum sales are:
 - Item_Type_Seafood = 0
- - Seafood must not be popular in the area of these stores so it has an impact on the outcome of the model.
+  - Seafood must not be popular in the area of these stores so it has an impact on the outcome of the model.
 - Outlet_Identifier_OUT010 = 0
- - Store 010 is one of the lower selling stores, so the fact that is is not apart of the lower selling group is helping the overall outcome of the model.
+  - Store 010 is one of the lower selling stores, so the fact that is is not apart of the lower selling group is helping the overall outcome of the model.
 - Item_Type_Fruits and Vegetables = 0
- - Fruits and Vegetables must not be popular in the area of these stores so it has an impact on the outcome of the model.
+  - Fruits and Vegetables must not be popular in the area of these stores so it has an impact on the outcome of the model.
 - Outlet_Identifier_OUT019 = 0
- - Store 019 is one of the lower selling stores, so the fact that is is not apart of the lower selling group is helping the overall outcome of the model.
+  - Store 019 is one of the lower selling stores, so the fact that is is not apart of the lower selling group is helping the overall outcome of the model.
 - Item_Type_Snack Food = 0
- - Snack Foods must not be popular in the area of these stores so it has an impact on the outcome of the model.
+  - Snack Foods must not be popular in the area of these stores so it has an impact on the outcome of the model.
 </p>
 
 
